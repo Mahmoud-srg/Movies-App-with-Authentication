@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-color: #131722;
+  --main-font: "Montserrat Alternates", sans-serif;
+  --blue-bg: #24baef;
+  --font-color: #fff;
+}
+body {
+  font-family: var(--main-font);
+  background: var(--bg-color);
+  color: var(--font-color);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  background: var(--blue-bg);
+}
+nav .nav-link,
+nav .social .fab:hover {
+  transition: color 0.3s;
+}
+
+nav .nav-link:hover,
+nav .social .fab:hover {
+  color: #1b263b !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.my-input {
+  background: transparent;
+  border: solid 1px #a8a8a83d;
+  color: var(--font-color);
+}
+
+.offline {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  box-shadow: 5px 5px 10px #888;
+}
+
+.brdr {
+  height: 1px;
+  background: #a8a8a83d;
+}
+
+.vote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--blue-bg);
+}
+
+.gray {
+  color: #ccc;
+}
+
+footer {
+  background: #1b263b;
+}
+
+/* Not found page */
+.vh-50 {
+  height: 50vh;
+}
+
+.w-screen {
+  min-height: calc(100vh - 56px);
+}
+
